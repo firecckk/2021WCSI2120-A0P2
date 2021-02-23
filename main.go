@@ -76,7 +76,7 @@ func bruteForce() {
 	//fmt.Printf("cases %d\n", cases)
 	// how many cases for a thread
 	result := cases / threads
-	reminder := cases % result
+	reminder := cases % threads
 	ch := make(chan *Knapsack)
 	// equally distribute work
 	runs := 0
